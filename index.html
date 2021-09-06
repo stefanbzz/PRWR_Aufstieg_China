@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauptseite</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body> 
+  <!-- Titelbild und Text auf Titelbild -->
+  <a name="top"></a>
+  <div class="topnav" id="navigation">
+    <a href="index.html">Home</a>
+    <a href="geschichte.html">Geschichte</a>
+    <a href="konflikt.html"> Konflikt USA</a>
+    <a href="arbeit.html"> Arbeit </a>
+    <a href="luft.html"> Luftverschmutzung </a>
+    <a href="abhaengig.html"> Abhängigkeit </a>
+    <a href="zukunft.html"> Zukunft </a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+  </div>
+    <!-- Titelbild und Text auf Titelbild -->
+    
+  <div class="container">
+    <div class="bg"></div>
+    <div class="top-right">von Stefan Thomsen und Davide Di Giovanni</div>
+    <div class="caption"><h1>Chinas Aufstieg</h1>
+    <h3>Wie China langsam zur Volkswirtschaftmacht der Welt avanciert</h3></div>
+  </div>
+    <!-- Bild und Text -->
+  <div class="box">
+        <div class="imgbox">
+          <img class="center-fit" src="bild/bild1.jpg" alt="">
+      <div class="inhalt">
+            <p>China hat den schnellsten Aufstieg in der Ökonomie erlebt das je ein Land erlebte.
+              Zwischen 2000 und 2010 resultierte ein Wirtschaftswachstum zwischen 8% und 14% Prozent und stieg zur zweitgrössten Volkwirtschaft der Welt auf.
+              Hinter den Vereinigten Staaten. Es ist eindeutig das China die USA bald überholen werde.
+              Es ist nur eine Frage der Zeit, bis sie zur Weltmacht aufsteigt.
+            </p> 
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+    <!-- Fussnote -->
+    <div class="gotop">
+      <div class="grow"><a href="#top"><i class="fa fa-arrow-up fa-4x" aria-hidden="true" onclick="  "></i></a></div>
+    </div>
+
+
+<!----------- Footer ------------>
+        <div class="footerone">
+            <div class="flexitem" >   
+              <a href="index.html">Home</a>
+              <a href="geschichte.html">Geschichte</a>
+              <a href="konflikt.html"> Konflikt USA</a>
+              <a href="arbeit.html"> Arbeit </a>
+              <a href="luft.html"> Luftverschmutzung </a>
+              <a href="abhaengig.html"> Abhängigkeit </a>
+              <a href="zukunft.html"> Zukunft </a>
+            </div>         
+          <div class="flexitemside">
+            <h1>Über uns </h1>
+            <p>Wir sind zwei IMS-Schüler aus der Kantonsschule Hottingen, die über mehrere Wochen eine Website über China im Fach PRWR kreiert haben.</p>
+          </div>
+   
+        </div>
+          <div class="copyright">
+            <p>©Stefan Thomsen & Davide Di Giovanni 2020</p>
+          </div>
+      </div>
+    </body>
+</html>
